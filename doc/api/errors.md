@@ -795,7 +795,7 @@ The selected public or private key encoding is incompatible with other options.
 <a id="ERR_CRYPTO_INITIALIZATION_FAILED"></a>
 ### `ERR_CRYPTO_INITIALIZATION_FAILED`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 Initialization of the crypto subsystem failed.
@@ -803,7 +803,7 @@ Initialization of the crypto subsystem failed.
 <a id="ERR_CRYPTO_INVALID_AUTH_TAG"></a>
 ### `ERR_CRYPTO_INVALID_AUTH_TAG`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid authentication tag was provided.
@@ -811,7 +811,7 @@ An invalid authentication tag was provided.
 <a id="ERR_CRYPTO_INVALID_COUNTER"></a>
 ### `ERR_CRYPTO_INVALID_COUNTER`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid counter was provided for a counter-mode cipher.
@@ -819,7 +819,7 @@ An invalid counter was provided for a counter-mode cipher.
 <a id="ERR_CRYPTO_INVALID_CURVE"></a>
 ### `ERR_CRYPTO_INVALID_CURVE`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid elliptic-curve was provided.
@@ -832,7 +832,7 @@ An invalid [crypto digest algorithm][] was specified.
 <a id="ERR_CRYPTO_INVALID_IV"></a>
 ### `ERR_CRYPTO_INVALID_IV`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid initialization vector was provided.
@@ -840,7 +840,7 @@ An invalid initialization vector was provided.
 <a id="ERR_CRYPTO_INVALID_JWK"></a>
 ### `ERR_CRYPTO_INVALID_JWK`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid JSON Web Key was provided.
@@ -853,7 +853,7 @@ The given crypto key object's type is invalid for the attempted operation.
 <a id="ERR_CRYPTO_INVALID_KEYLEN"></a>
 ### `ERR_CRYPTO_INVALID_KEYLEN`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid key length was provided.
@@ -861,7 +861,7 @@ An invalid key length was provided.
 <a id="ERR_CRYPTO_INVALID_KEYPAIR"></a>
 ### `ERR_CRYPTO_INVALID_KEYPAIR`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid key pair was provided.
@@ -869,7 +869,7 @@ An invalid key pair was provided.
 <a id="ERR_CRYPTO_INVALID_KEYTYPE"></a>
 ### `ERR_CRYPTO_INVALID_KEYTYPE`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid key type was provided.
@@ -877,7 +877,7 @@ An invalid key type was provided.
 <a id="ERR_CRYPTO_INVALID_MESSAGELEN"></a>
 ### `ERR_CRYPTO_INVALID_MESSAGELEN`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid message length was provided.
@@ -885,7 +885,7 @@ An invalid message length was provided.
 <a id="ERR_CRYPTO_INVALID_SCRYPT_PARAMS"></a>
 ### `ERR_CRYPTO_INVALID_SCRYPT_PARAMS`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 Invalid scrypt algorithm parameters were provided.
@@ -899,7 +899,7 @@ instance, calling [`cipher.getAuthTag()`][] before calling `cipher.final()`.
 <a id="ERR_CRYPTO_INVALID_TAG_LENGTH"></a>
 ### `ERR_CRYPTO_INVALID_TAG_LENGTH`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An invalid authentication tag length was provided.
@@ -907,7 +907,7 @@ An invalid authentication tag length was provided.
 <a id="ERR_CRYPTO_JOB_INIT_FAILED"></a>
 ### `ERR_CRYPTO_JOB_INIT_FAILED`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 Initialization of an asynchronous crypto operation failed.
@@ -915,7 +915,7 @@ Initialization of an asynchronous crypto operation failed.
 <a id="ERR_CRYPTO_OPERATION_FAILED"></a>
 ### `ERR_CRYPTO_OPERATION_FAILED`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 A crypto operation failed for an otherwise unspecified reason.
@@ -963,7 +963,7 @@ An unknown Diffie-Hellman group name was given. See
 <a id="ERR_DLOPEN_FAILED"></a>
 ### `ERR_DLOPEN_FAILED`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 A call to `process.dlopen()` failed.
@@ -976,7 +976,7 @@ The [`fs.Dir`][] was previously closed.
 <a id"ERR_CRYPTO_UNSUPPORTED_OPERATION"></a>
 ### `ERR_CRYPTO_UNSUPPORTED_OPERATION`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An attempt to invoke an unsupported crypto operation was made.
@@ -1513,7 +1513,7 @@ An IP address is not valid.
 <a id="ERR_INVALID_MODULE"></a>
 ### `ERR_INVALID_MODULE`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An attempt was made to load a module that does not exist or was otherwise not
@@ -1580,7 +1580,7 @@ type on execution, such as when a function is expected to return a promise.
 <a id="ERR_INVALID_STATE"></a>
 ### `ERR_INVALID_STATE`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 Indicates that an operation cannot be completed due to an invalid state.
@@ -1768,14 +1768,14 @@ this error will not occur with standard builds of Node.js.
 <a id="ERR_MISSING_TRANSFERABLE_IN_TRANSFER_LIST"></a>
 ### `ERR_MISSING_TRANSFERABLE_IN_TRANSFER_LIST`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An object that needs to be explicitly listed in the `transferList` argument
 is in the object passed to a [`postMessage()`][] call, but is not provided
 in the `transferList` for that call. Usually, this is a `MessagePort`.
 
-In Node.js versions prior to REPLACEME, the error code being used here was
+In Node.js versions prior to v15.0.0, the error code being used here was
 [`ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST`][]. However, the set of
 transferable object types has been expanded to cover more types than
 `MessagePort`.
@@ -2535,7 +2535,7 @@ A given index was out of the accepted range (e.g. negative offsets).
 ### `ERR_INVALID_OPT_VALUE`
 <!-- YAML
 added: v8.0.0
-removed: REPLACEME
+removed: v15.0.0
 -->
 
 An invalid or unexpected value was passed in an options object.
@@ -2544,7 +2544,7 @@ An invalid or unexpected value was passed in an options object.
 ### `ERR_INVALID_OPT_VALUE_ENCODING`
 <!-- YAML
 added: v9.0.0
-removed: REPLACEME
+removed: v15.0.0
 -->
 
 An invalid or unknown file encoding was passed.
@@ -2552,11 +2552,11 @@ An invalid or unknown file encoding was passed.
 <a id="ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST"></a>
 ### `ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST`
 <!-- YAML
-removed: REPLACEME
+removed: v15.0.0
 -->
 
 This error code was replaced by [`ERR_MISSING_TRANSFERABLE_IN_TRANSFER_LIST`][]
-in Node.js REPLACEME, because it is no longer accurate as other types of
+in Node.js v15.0.0, because it is no longer accurate as other types of
 transferable objects also exist now.
 
 <a id="ERR_NAPI_CONS_PROTOTYPE_OBJECT"></a>
@@ -2577,7 +2577,7 @@ A Node.js API was called in an unsupported manner, such as
 <a id="ERR_OPERATION_FAILED"></a>
 ### `ERR_OPERATION_FAILED`
 <!-- YAML
-added: REPLACEME
+added: v15.0.0
 -->
 
 An operation failed. This is typically used to signal the general failure
